@@ -30,7 +30,7 @@ h1 {
     margin-bottom: 50px;
     background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 form {
@@ -131,13 +131,6 @@ button {
     font-size: 18px;
     margin-left: 15px;
 }
-
-/* .buttonReset:hover {
-    background: white;
-    color: black;
-    border: 2px black solid;
-    font-size: 18px;
-}  */
     
 .result {
     margin-top: 20px;
