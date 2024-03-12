@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Mini Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="assets/icon/icon-bmi.png">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-gradient d-inline blinkingCursor">KALKULATOR BMI - MUHAMMAD RIFQI AKHDAN</h1>
+        <form id="bmiForm">
+            <div class="input-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select id="gender" class="form-control" required>
+                    <option value="" disabled selected hidden>Pilih Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>                
+            </div>
+            <div class="input-group">
+                <label for="weight">Berat Badan (kg)</label>
+                <input type="number" id="weight" placeholder="Masukkan Berat Badan">
+            </div>
+            <div class="input-group">
+                <label for="height">Tinggi Badan (cm)</label>
+                <input type="number" id="height"placeholder="Masukkan Tinggi Badan" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Usia (Tahun)</label>
+                <input type="number" id="age" placeholder="Masukkan Usia" required>
+            </div>
+            <button type="submit" class="buttonSubmit btn-submit">Hitung BMI</button>
+            <button type="reset" class="buttonReset btn-reset" onclick="resetForm()">Reset</button>
+            <div class="result" id="result" style="display: none;"></div>
+        </form>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
